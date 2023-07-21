@@ -42,11 +42,12 @@ nav ul li{
 nav ul li a{
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   position: relative;
+  transition: 0.5s;
 }
 /*TO SET THE DETAILS AFTER HOVERING*/
-nav ul li a::after{
+/* nav ul li a::after{
   content: '';
   width: 0;
   height: 3px;
@@ -55,9 +56,12 @@ nav ul li a::after{
   left: 0;
   bottom: -6px;
   transition: 0.5s;
-}
+} */
 nav ul li a:hover::after{
   width: 100%;
+}
+nav ul li a:hover{
+  color: #ff004f;
 }
 /*DECORATING THE HEADER TEXT*/
 .header-text{
@@ -72,6 +76,7 @@ nav ul li a:hover::after{
 /*COLORING MY NAME PART*/
 .header-text h1 span{
   color: #ff004f;
+  /* animation: Glow 2s infinite; */
 }
 /* -----------------------about---------------------- */
 #about{
@@ -88,7 +93,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
   width: 100%;
-  border-radius: 15px;
+  border-radius: 35px;
 }
 .about-col-2{
   flex-basis: 60%;
@@ -366,22 +371,6 @@ form.btn2{
     width: 30px;
     height: 20px;
   }
-  /*
-  .contact-left p{
-      margin: 30px 50px;
-      transition: transform 0.5s;
-      display: flex;
-    }
-  .sub-title.contactme{
-    font-size: 49px;
-    margin-left: 20px;
-  }
-  .contact-left p img{
-    width: 25px;
-  }
-  .social-icons a.fb{
-    margin-left: 50px;
-  }*/
   .contact-left p:hover{
     color: #ff004f;
   }
