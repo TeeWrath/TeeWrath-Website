@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/img/lucifer.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/5f230f3b92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar and stuff -->
+    <div id="header">
+        <div class="container">
+          <nav >
+            <a href="index.html"><img src="img/lucifer.png" id="logo" alt=""></a>
+            <ul id="sidemenu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="#">Achievements</a></li>
+              <li><a href="#projects">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <img src="img/cross-removebg-preview.png" class="img" onclick="closemenu()">
+            </ul>
+            <img src="img/menu-removebg-preview.png" id="menu" class="img" onclick="openmenu()">
+          </nav>
+
+          <!-- About content -->
+          <div id="about">
+            <div class="container">
+              <div class="row">
+                <div class="about-col-1">
+                  <img src="img/1.JPG" data-aos="fade-down" data-aos-duration="1000" alt="">
+                </div>
+                <div class="about-col-2">
+                  <h1 class="sub-title" data-aos="fade-down" data-aos-duration="1000">About me</h1>
+                  <p data-aos="fade-down" data-aos-duration="1000">I am a Sophomore Engineering Undergraduate from Indian Institute of Information Technology , Kalyani . 
+                    I am pursuing B.Tech in Electronics and Communication Engineering. 
+                    I have a knack for all things technology. As such, I love building software. </p>
+                  <div class="tab-titles" data-aos="fade-down" data-aos-duration="1000">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="skills" data-aos="fade-down" data-aos-duration="1000">
+                    <ul>
+                      <li><span>Programing</span><br>Java, C, Python, TypeScript, JavaScript, Dart</li>
+                      <li><span>Frontend Web Dev</span><br>HTML, CSS, JavaScript, Tailwind CSS, React, Angular</li>
+                      <li><span>Backend</span><br>FastAPI, Django, Firebase</li>
+                      <li><span>Mobile App Dev</span><br>Flutter</li>
+                      <li><span>Containerization and Cloud</span><br>Docker, Google Cloud Platform</li>
+                      <li><span>UI/UX and Media</span><br>Figma, Canva, KineMaster</li>
+                      <li><span>Tools</span><br>Postman, Git, Github, ViteJs, Selenium</li>
+                      <li><span>Soft Skills</span><br>Management, PR and Outreach, Social Media Managing, Leadership, Public Speaking</li>
+                      <li><span>Music Production</span><br>Songwriting, Mixing and Mastering</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="education">
+                    <ul>
+                      <li><span>10+2 (2009-2021)</span><br>Kendriya Vidyalaya No. 2, Agra Cantt</li>
+                      <li><span>Bachelors in Technology (Electronics and Communication Engineering) (2022-2026)</span><br>Indian Institute of Information Technology, Kalyani</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                      <li><span>Hooman Digital LLP - DevRel Intern (June - July 2023)</span><br>Created Twitter Posts for the company, handled their socials, created posts for their clients.</li>
+                      <li><span>Status Code 0</span><br>Education Track Winner and Most Active Hacker</li>
+                      <li><span>GirlScript Summer of Code 2023</span><br>My first open source program. Contributed to a few projects.</li>
+                      <li><span>CodeCubes (March - October 2023)</span><br>Coding Club of IIIT Kalyani, contributed as a volunteer. Organized event on Competitive Programming</li>
+                      <li><span>FreeScape (January 2024 - Present)</span><br>Maintainer at Open source and Development Club of IIIT Kalyani</li>
+                      <li><span>Google Developer Groups Kolkata (Nov - Dec 2023)</span><br>Web Developer</li>
+                      <li><span>Kharagpur Winter of Code (Nov 2023 - Jan 2024)</span><br>Mentored Project NoteX and NoteXplorer API</li> <!-- Add links to the certificates too -->
+                      <li><span>Social Winter of Code 4.0 (Dec 2023 -  Present)</span><br>Project Admin of MindSpace</li>
+                      <li><span>Google Developer Students Club IIIT Kalyani (August 2023 - Present)</span><br>Web Dev Lead</li>
+                      <li><span>Free and Open Source Software Club IIIT Kalyani (Sept 2023 - Present)</span><br>Lead</li>
+                      <li><span>Streamlit</span><br>Student Ambassador</li>
+                      <li><span>Diversion 2k24</span><br>Hackathon Evangelist and Participant</li>
+                      <li><span>FOSS United Foundation</span><br>Volunteer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Javascript -->
+    <script src="main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -96,27 +96,29 @@ nav ul li a:hover{
 /* -----------------------about---------------------- */
 #about{
   padding: 80px 0;
-  color: #ababab;
+  color: #fff;
 }
 .row{
-  display: flex;/*gets content side by side*/
-  justify-content: space-between;
+  display: block;/*gets content side by side*/
+  justify-content: center;
   flex-wrap: wrap;
 }
 .about-col-1{
-  flex-basis: 35%;/*width of the column*/
+  /* flex-basis: 35%;width of the column */
+  display: flex;
+  justify-content: center;
 }
 .about-col-1 img{
-  width: 100%;
-  border-radius: 35px;
+  width: 30%;
+  border-radius: 0px;
 }
 .about-col-2{
-  flex-basis: 60%;
+  /* flex-basis: 60%; */
 }
 .sub-title{
   font-size: 60px;
   font-weight: 600;
-  color: white;
+  color: #E82D2D;
 }
 .tab-titles{
   display: flex;
@@ -131,13 +133,13 @@ nav ul li a:hover{
 }
 .tab-links::after{
   content: '';
-  width:0 ;
+  width: 0;
   height: 3px;
   background: #E82D2D;
   position: absolute;
   left: 0;
-  bottom: -8px;
-  transform: 0.5s;
+  bottom: -6px;
+  transition: 0.5s;
 }
 .tab-links:hover::after{
   width: 100%;
