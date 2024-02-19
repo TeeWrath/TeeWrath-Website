@@ -14,9 +14,6 @@ body{
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url(img/homepic.png);
-  background-size: cover;
-  background-position: center;
 }
 .container{
   padding: 10px 10%;
@@ -47,35 +44,53 @@ nav ul li a{
   transition: 0.5s;
 }
 /*TO SET THE DETAILS AFTER HOVERING*/
-/* nav ul li a::after{
+nav ul li a::after{
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #E82D2D;
   position: absolute;
   left: 0;
   bottom: -6px;
   transition: 0.5s;
-} */
+}
 nav ul li a:hover::after{
   width: 100%;
 }
 nav ul li a:hover{
-  color: #ff004f;
+  color: #E82D2D;
+}
+
+#logo{
+  width: 30%;
 }
 /*DECORATING THE HEADER TEXT*/
+.header-content{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5rem;
+}
+
+.header-content div img{
+  width: 95%;
+  flex-basis: 30%;
+  margin-top: 10rem;
+  border-radius: 100rem;
+  border: 0.8rem solid #E82D2D;
+}
 .header-text{
-  margin-top: 20%;
-  font-size: 30px;
+  margin-top: 18%;
+  flex-basis: 55%;
+  font-size: 22px;
 }
 /*DECORATING THE NAME WALA HISSA*/
 .header-text h1{
-  font-size: 60px;
-  margin-top: 20px;
+  font-size: 70px;
+  /* margin-top: 20px; */
 }
 /*COLORING MY NAME PART*/
 .header-text h1 span{
-  color: #ff004f;
+  color: #E82D2D;
   /* animation: Glow 2s infinite; */
 }
 /* -----------------------about---------------------- */
@@ -118,7 +133,7 @@ nav ul li a:hover{
   content: '';
   width:0 ;
   height: 3px;
-  background: #ff004f;
+  background: #E82D2D;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -135,7 +150,7 @@ nav ul li a:hover{
   margin: 5px 0;
 }
 .tab-contents ul li span{
-  color: #b54769;
+  color: #E82D2D;
   font-size: 20px;
 }
 .tab-contents{
@@ -175,7 +190,7 @@ nav ul li a:hover{
 .layer{
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+  background: linear-gradient(rgba(0,0,0,0.6),#E82D2D);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -241,7 +256,7 @@ nav ul li a:hover{
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #ff004f;
+  border: 1px solid #E82D2D;
   padding: 14px 50px;
   border-radius: 6px;
   text-decoration: none;
@@ -249,14 +264,14 @@ nav ul li a:hover{
   transition: background 0.5s;
 }
 .btn:hover{
-  background: #ff004f;
+  background: #E82D2D;
 }
 .btn.btn2{
   display: inline-block;
   /*background: #ff004f;*/
 }
 #submit{
-  background: #ff004f;
+  background: #E82D2D;
   cursor: pointer;
 }
 .contact-right form{
@@ -310,7 +325,7 @@ form.btn2{
     cursor: pointer;
   }
   nav ul{
-    background: #ff004f;
+    background: #E82D2D;
     position: fixed;
     top: 0;
     right: -200px;
@@ -372,7 +387,7 @@ form.btn2{
     height: 20px;
   }
   .contact-left p:hover{
-    color: #ff004f;
+    color: #E82D2D;
   }
   .contact-left, .contact-right{
     flex-basis: 100%;
