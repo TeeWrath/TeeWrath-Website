@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/img/lucifer.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/5f230f3b92.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar and stuff -->
+    <div id="header">
+        <div class="container">
+          <nav >
+            <a href="index.html"><img src="img/lucifer.png" id="logo" alt=""></a>
+            <ul id="sidemenu">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <!-- <li><a href="#">Achievements</a></li> -->
+              <li><a href="#">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <img src="img/cross-removebg-preview.png" class="img" onclick="closemenu()">
+            </ul>
+            <img src="img/menu-removebg-preview.png" id="menu" class="img" onclick="openmenu()">
+          </nav>
+
+          <div class="works" data-aos="fade-down" data-aos-duration="1000">
+            <a href="#">
+                <h1>Software</h1>
+                <div class="work-grid" id="software">
+                </div>
+            </a>
+            <a href="#">
+                <h1>Music</h1>
+                <div class="work-grid" id="music">
+                    
+                </div>
+            </a>
+            <a href="#">
+                <h1>Writings/Content</h1>
+                <div class="work-grid" id="writing">
+                    
+                </div>
+            </a>
+            <a href="#">
+                <h1>Sessions/Talks</h1>
+                <div class="work-grid" id="talks">
+                   
+                </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- Javascript -->
+    <script src="main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

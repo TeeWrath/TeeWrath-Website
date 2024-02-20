@@ -3,6 +3,7 @@
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
+  transition: 0.5s;
 }
 html{
   scroll-behavior: smooth;
@@ -161,67 +162,77 @@ nav ul li a:hover{
 .tab-contents.active-tab{
   display: block;
 }
-/*-------------------PROJECT------------------*/
-#projects{
-  padding: 50px 0;
 
-}
-.project-list{
+/*-------------- Work ----------------------*/
+#header .container .works{
+  margin: 2rem;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-  grid-template-columns: repeat(3,1fr);
-  grid-gap: 40px;
-  margin-top: 50px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
 }
-.work{
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  /* margin: auto; */
-  margin-top: 1.5rem;
+
+#header .container .works .work-grid{
+  max-width: 50rem;
+  width: 40rem;
+  height: 20rem;
+  background-color: white;
+  border-radius: 1rem;
 }
-.work img{
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-  transition: transform 0.5s ;
+
+#header .container .works a{
+  text-decoration: none;
+  color: #E82D2D;
+  font-size: 1rem;
+  font-weight: 900;
 }
-.work:hover img{
-  transform:scale(1.1) ;
+
+#header .container .works a:hover{
+  font-size: 1.3rem;
+  color: #fff;
 }
-.layer{
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0,0,0,0.6),#E82D2D);
-  border-radius: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
-  transition: height 0.5s;
+
+#software{
+  background-image: url(/img/softwarecover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
 }
-.work:hover .layer{
-  height: 100%;
+
+#music{
+  background-image: url(/img/musiccover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
 }
-#link-icon{
-  width: 30px;
-  display: flex;
-  margin: 15px 220px;
+
+#writing{
+  background-image: url(/img/writecover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
 }
-.layer h3{
-  font-weight: 5000;
-  margin-bottom: 20px;
+
+#talks{
+  background-image: url(/img/sessioncover.JPEG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
 }
-.social-icons a img{
-  width: 40px;
-  margin: 30px 0 ;
+#software:hover{
+  -webkit-filter: blur(3px);
+}
+#music:hover{
+  -webkit-filter: blur(3px);
+}
+#writing:hover{
+  -webkit-filter: blur(3px);
+}
+#talks:hover{
+  -webkit-filter: blur(3px);
 }
 /*----------------contact*------------------*/
 .contact-left{
